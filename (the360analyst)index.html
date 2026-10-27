@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 360 Analyst | Business Analysis + Project Management</title>
+<meta name="description" content="Learn the core concepts, techniques and methods of Business Analysis and Project Management in one place.">
+<link rel="icon" href="logo.png">
+<meta property="og:title" content="The 360 Analyst">
+<meta property="og:description" content="Learn the Skills. Understand the Business. Solve the Problem.">
+<meta property="og:image" content="banner.png">
+<meta name="theme-color" content="#ffd320"><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--card:#fff;--ink:#000;--mute:#4a4a4a;--line:#000;--y:#ffd320;--ba:#000;--pm:#ffd320;--both:#7a7a7a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);background-image:linear-gradient(#0000000a 1px,transparent 1px),linear-gradient(90deg,#0000000a 1px,transparent 1px);background-size:28px 28px;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+h1,h2,h3,.logo{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;line-height:1.05;margin:0;letter-spacing:.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--y);border-bottom:3px solid #000}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-size:1.9rem}
+.logo b{background:#000;color:#fff;font-weight:400;padding:2px 8px}
+.logo span{line-height:.9;font-size:1.5rem}
+nav a{margin-left:18px;text-decoration:none;font-weight:700;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:56px 0 40px}
+.hero h1{font-size:clamp(3rem,7vw,5rem)}
+.hero h1 mark{background:var(--y);padding:0 .15em}
+.hero p{color:var(--mute);max-width:46ch;font-size:1.1rem}
+.pills{display:flex;gap:8px;margin:0 0 18px}
+.pills i{font-style:normal;border:2px solid #000;border-radius:99px;padding:2px 16px;font-weight:700;background:#fff}
+.btn{display:inline-block;padding:10px 20px;border:2px solid #000;background:#000;color:#fff;text-decoration:none;font-weight:700;margin:0 8px 8px 0}
+.btn.alt{background:var(--y);color:#000}
+.btn:hover{box-shadow:4px 4px 0 #000;transform:translate(-2px,-2px)}
+.venn{width:100%;max-width:380px;justify-self:center}
+.venn text{font-family:'Bebas Neue',Impact,sans-serif}
+.venn g{cursor:pointer}
+section{padding:36px 0}
+h2{font-size:2.4rem;margin-bottom:6px}
+.sub{color:var(--mute);margin:0 0 20px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:2px solid #000;background:#fff;color:#000;padding:5px 14px;border-radius:99px;cursor:pointer;font:inherit;font-size:.9rem;font-weight:600}
+.chip[aria-pressed=true]{background:#000;color:var(--y)}
+input[type=search]{flex:1;min-width:180px;padding:8px 14px;border:2px solid #000;border-radius:99px;background:#fff;color:#000;font:inherit}
+.prog{height:12px;border:2px solid #000;background:#fff;margin:14px 0 4px}
+.prog i{display:block;height:100%;width:0;background:var(--y);transition:width .3s}
+.phases{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:20px 0}
+.phase{border:2px solid #000;background:#fff;padding:10px 12px;text-align:left;cursor:pointer;color:#000;font:inherit}
+.phase b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:1.3rem}
+.phase small{color:var(--mute)}
+.phase[aria-pressed=true]{background:var(--y);box-shadow:4px 4px 0 #000}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+details{background:#fff;border:2px solid #000;border-left:10px solid var(--c);padding:14px 16px}
+details[open]{grid-column:1/-1;box-shadow:5px 5px 0 #000}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:1.5rem}
+summary span{font-size:.75rem;font-weight:700;white-space:nowrap;border:1.5px solid #000;padding:0 8px;background:var(--c);color:var(--t)}
+.short{color:var(--mute);margin:6px 0 0;font-size:.95rem}
+.body{margin-top:12px;border-top:2px dashed #000;padding-top:12px}
+.body h4{margin:10px 0 2px;font-size:.95rem;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:4px}
+.body p{margin:0}
+.done{margin-top:14px;display:flex;gap:8px;align-items:center;font-size:.9rem;font-weight:600}
+table{width:100%;border-collapse:collapse;background:#fff;border:2px solid #000;font-size:.95rem}
+th,td{padding:10px 12px;border:1px solid #000;text-align:left;vertical-align:top}
+th{background:#000;color:var(--y)}
+.tw{overflow-x:auto}
+.empty{padding:24px;border:2px dashed #000;background:#fff}
+.connect{background:var(--y);border-top:3px solid #000;border-bottom:3px solid #000}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.links a{display:block;background:#fff;border:2px solid #000;padding:12px 16px;text-decoration:none;font-weight:700}
+.links a small{display:block;font-weight:400;color:var(--mute)}
+.links a:hover{background:#000;color:var(--y)}
+.links a:hover small{color:#fff}
+footer{background:#000;color:#fff;padding:24px 0;font-size:.9rem}
+footer a{color:var(--y)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.phases{grid-template-columns:1fr 1fr}nav{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="The 360 Analyst home"><b>360</b><span>THE<br>ANALYST</span></a><nav><a href="#learn">Learn</a><a href="#compare">BA vs PM</a><a href="#shared">Shared tools</a><a href="#connect">Connect</a></nav></div></header>
+<main id="top" class="wrap">
+<div class="hero">
+ <div>
+  <div class="pills"><i>Learn</i><i>Analyse</i><i>Solve</i></div>
+  <h1>Learn the skills. Understand the <mark>business</mark>. Solve the problem.</h1>
+  <p>Business analysts define the what and why. Project managers control the how, when and with what. Learn both sides, the way real organizations use them.</p>
+  <a class="btn" href="#learn">Start learning</a><a class="btn alt" href="#compare">BA vs PM</a>
+ </div>
+ <svg class="venn" viewBox="0 0 380 260" role="group" aria-label="Choose a track">
+  <g tabindex="0" role="button" aria-label="Project Management topics" onclick="setTrack('pm')" onkeydown="if(event.key==='Enter')setTrack('pm')"><circle cx="240" cy="130" r="105" fill="#ffd320" stroke="#000" stroke-width="4"/><text x="272" y="146" font-size="44" fill="#000">PM</text></g>
+  <g tabindex="0" role="button" aria-label="Business Analysis topics" onclick="setTrack('ba')" onkeydown="if(event.key==='Enter')setTrack('ba')"><circle cx="140" cy="130" r="105" fill="#000" fill-opacity=".88" stroke="#000" stroke-width="4"/><text x="52" y="146" font-size="44" fill="#fff">BA</text></g>
+  <g tabindex="0" role="button" aria-label="Shared topics" onclick="setTrack('both')" onkeydown="if(event.key==='Enter')setTrack('both')"><text x="190" y="136" font-size="20" text-anchor="middle" fill="#ffd320">SHARED</text></g>
+ </svg>
+</div>
+
+<section id="learn">
+ <h2>Learning path</h2>
+ <p class="sub">Five phases that follow a real project lifecycle. Pick a phase, filter by role, open a topic, and tick it off.</p>
+ <div class="phases" id="phases"></div>
+ <div class="bar" id="tracks"></div>
+ <div class="bar"><input type="search" id="q" placeholder="Search a technique, e.g. BPMN, EVM, RACI" aria-label="Search topics"></div>
+ <div class="prog"><i id="pb"></i></div><p class="sub" id="pt"></p>
+ <div class="grid" id="grid"></div>
+</section>
+
+<section id="compare">
+ <h2>BA vs PM at a glance</h2>
+ <p class="sub">Two roles, one outcome. Knowing where they differ makes handoffs smoother.</p>
+ <div class="tw"><table>
+ <tr><th></th><th>Business Analyst</th><th>Project Manager</th></tr>
+ <tr><td>Core question</td><td>What problem are we solving, and what must the solution do?</td><td>How, when and at what cost will we deliver it?</td></tr>
+ <tr><td>Main output</td><td>Requirements, models, business case, acceptance criteria</td><td>Plan, schedule, budget, risk register, status reports</td></tr>
+ <tr><td>Standard</td><td>BABOK Guide (IIBA)</td><td>PMBOK Guide (PMI)</td></tr>
+ <tr><td>Certifications</td><td>ECBA, CCBA, CBAP</td><td>CAPM, PMP</td></tr>
+ <tr><td>Success measure</td><td>Solution delivers the intended business value</td><td>On time, on budget, in scope, with quality</td></tr>
+ </table></div>
+</section>
+
+<section id="shared">
+ <h2>Shared tools</h2>
+ <p class="sub">The same tool, used differently by each role.</p>
+ <div class="tw"><table>
+ <tr><th>Tool</th><th>BA uses it to</th><th>PM uses it to</th></tr>
+ <tr><td>MoSCoW</td><td>Rank requirements by user need</td><td>Protect the MVP under time and budget limits</td></tr>
+ <tr><td>RACI</td><td>Clarify who approves or reviews requirements</td><td>Assign accountability for tasks</td></tr>
+ <tr><td>UAT</td><td>Design test scenarios against acceptance criteria</td><td>Manage customer sign-off and handover</td></tr>
+ <tr><td>ADKAR</td><td>Assess user readiness for the change</td><td>Plan training and adoption timelines</td></tr>
+ </table></div>
+</section>
+</main>
+<section id="connect" class="connect"><div class="wrap">
+ <h2>Connect with The 360 Analyst</h2>
+ <p class="sub" style="color:#000">Follow for daily tips, watch the tutorials, or book a session.</p>
+ <div class="links">
+  <a href="https://www.instagram.com/the360analyst/" target="_blank" rel="noopener">Instagram<small>@the360analyst</small></a>
+  <a href="https://www.linkedin.com/company/the-360-analyst" target="_blank" rel="noopener">LinkedIn<small>The 360 Analyst</small></a>
+  <a href="https://www.youtube.com/@360Analyst" target="_blank" rel="noopener">YouTube<small>@360Analyst</small></a>
+  <a href="https://topmate.io/the360analyst" target="_blank" rel="noopener">Topmate<small>Book a session</small></a>
+ </div></div></section>
+<footer><div class="wrap">The 360 Analyst. Study notes for learning, not a replacement for the official BABOK or PMBOK guides.<br><a href="https://www.instagram.com/the360analyst/">Instagram</a> | <a href="https://www.linkedin.com/company/the-360-analyst">LinkedIn</a> | <a href="https://www.youtube.com/@360Analyst">YouTube</a> | <a href="https://topmate.io/the360analyst">Topmate</a></div></footer>
+
+<script>
+const P=["Foundations & strategy","Scoping & elicitation","Modeling & deliverables","Execution & tracking","Governance & delivery"];
+const T={ba:["Business analysis","#000","#fff"],pm:["Project management","#ffd320","#000"],both:["Shared","#c9c9c9","#000"]};
+// [track, phase, name, summary, how it works, example / formula]
+const D=[
+["ba",1,"SWOT analysis","Map internal strengths and weaknesses against external opportunities and threats.","List each quadrant with evidence, then link every weakness or threat to an action. Use it before defining a project to see where change is needed.","A retailer sees slow checkout (weakness) and rising online demand (opportunity), so it proposes a faster online checkout."],
+["ba",1,"PESTLE and MOST","Scan the outside world: Political, Economic, Social, Technological, Legal, Environmental. MOST checks Mission, Objectives, Strategy, Tactics.","Use PESTLE for external risks and regulations. Use MOST to confirm a proposal lines up with company strategy.","A new data law (Legal) forces a bank to change how customer data is stored."],
+["ba",1,"Gap analysis","Compare the current state to the target state and define the actions that close the gap.","Document baseline, target, gap, and an action plan with owners.","Manual loan approval takes 5 days; target is 1 day. Gap: no automated credit check."],
+["pm",1,"Project charter and business case","The charter authorizes the project. The business case justifies it with value, cost and risk.","Charter: objectives, scope, milestones, budget, sponsor. Business case: options, costs, benefits, ROI.","ROI = (benefit − cost) ÷ cost. A project returning 1.5× its cost is easier to approve."],
+["pm",1,"Stakeholder analysis","Identify who is affected and how much influence and interest they hold.","Plot stakeholders on a Power/Interest grid: manage closely, keep satisfied, keep informed, monitor.","The CFO (high power, high interest) gets close management; end users get regular updates."],
+["ba",2,"Requirement types","Business, stakeholder, solution (functional and non-functional) and transition requirements.","Trace each lower-level requirement to the business need above it. Write them to be clear, testable and unambiguous.","Functional: the system sends a receipt. Non-functional: the receipt sends within 5 seconds."],
+["ba",2,"Elicitation techniques","Ways to draw requirements out of people and documents.","Interviews, workshops/JAD, document analysis, observation (job shadowing), surveys, prototyping. Mix methods because people rarely state everything they need.","Shadow a call-center agent and discover a workaround nobody mentioned in interviews."],
+["ba",2,"User stories and Gherkin","Agile requirements written from the user's view with testable acceptance criteria.","Story: As a [user], I want [action] so that [benefit]. Criteria: Given [context] When [action] Then [result].","As a shopper, I want to save my cart so that I can finish later. Given I am logged in, When I leave, Then my cart is still there."],
+["pm",2,"Work Breakdown Structure","Split deliverables into smaller work packages until each can be estimated and assigned.","Decompose by deliverable, not by activity. Stop at pieces you can estimate (often 8 to 80 hours). Follow the 100% rule: the WBS covers all the scope and nothing more.","Website → Design → Wireframes, Visual design; Build → Frontend, Backend."],
+["both",2,"MoSCoW prioritization","Sort requirements into Must, Should, Could, Won't (this time).","Agree the categories with the sponsor. Keep Musts to roughly 60% of effort so there is room to absorb risk.","Must: secure login. Should: password reset. Could: dark mode. Won't: voice control."],
+["both",2,"RACI and DACI","Matrices that show who is Responsible, Accountable, Consulted, Informed (or Driver, Approver, Contributor, Informed).","Each task gets exactly one Accountable person. Too many Consulted people slows decisions.","BRD sign-off: BA Responsible, Product Owner Accountable, Legal Consulted, Team Informed."],
+["ba",3,"BPMN process modeling","Standard notation for drawing business processes, As-Is and To-Be.","Use swimlanes per role, events to start/end, tasks, and gateways: XOR (one path), AND (all paths), OR (one or more). Model the current process first, then the improved one.","Order process: Customer places order → XOR gateway: in stock? Yes → ship; No → backorder."],
+["ba",3,"UML diagrams","Standard diagrams for system behavior and structure.","Use case: who does what. Activity: workflow. Sequence: messages over time. State machine: states and transitions.","A sequence diagram shows App → API → Payment gateway → Bank during checkout."],
+["ba",3,"Data modeling","Describe the data a system stores and moves.","ERD: entities, attributes, relationships. DFD: how data flows. Data dictionary: definitions. CRUD matrix: who can Create, Read, Update, Delete.","Customer (1) places (many) Orders; each Order contains many Products."],
+["ba",3,"BRD, FRD and RTM","The core requirement documents and the matrix that links them.","BRD: business goals and scope. FRD: detailed system behavior. RTM maps each requirement from origin to design, test and delivery so nothing is missed or gold-plated.","Req 12 → Design screen 4 → Test case 31 → Released in v1.2."],
+["ba",3,"Wireframes and user journeys","Low-fidelity screen layouts and the map of a user's steps.","Sketch screens early and test them with users before build. A journey map lists steps, feelings and pain points.","A wireframe reveals the Pay button is hidden below the fold."],
+["pm",4,"Scheduling: CPM, PERT, Gantt","Techniques to sequence work and find the shortest possible duration.","CPM: the longest dependent path is the critical path; delays there delay the project. PERT estimate = (O + 4M + P) ÷ 6. Gantt charts show tasks against time.","O=4, M=6, P=14 days → PERT = (4 + 24 + 14) ÷ 6 = 7 days."],
+["pm",4,"Earned Value Management","Measures schedule and cost performance with one consistent set of numbers.","PV planned value, EV earned value, AC actual cost. SV = EV − PV; CV = EV − AC; SPI = EV ÷ PV; CPI = EV ÷ AC. Below 1.0 means behind or over budget.","PV 100k, EV 80k, AC 90k → SPI 0.8 (late), CPI 0.89 (over budget)."],
+["pm",4,"Risk management","Find, rate and respond to uncertainty before it becomes an issue.","Log risks in a register, score probability × impact, then choose a response: avoid, transfer, mitigate or accept. Review it every week.","Key developer may leave (high impact). Mitigate: cross-train a second person."],
+["pm",4,"Agile and Scrum","Iterative delivery in short sprints with a prioritized backlog.","Roles: Product Owner, Scrum Master, Developers. Events: sprint planning, daily stand-up, review, retrospective. Track with burndown charts and velocity.","A 2-week sprint with velocity of 30 points means about 30 points per sprint going forward."],
+["pm",4,"Kanban","Visualize work on a board and limit work in progress to improve flow.","Columns: To do, Doing, Done. Set WIP limits. Track lead time (request to delivery) and cycle time (start to delivery).","WIP limit of 3 in Doing forces the team to finish before starting more."],
+["pm",4,"Waterfall and hybrid delivery","Waterfall runs phase by phase with gates. Hybrid mixes upfront planning with agile execution.","Use waterfall for fixed, regulated scope. Use hybrid when governance and budgets are fixed but features can evolve.","A bank plans budget and compliance up front, then builds features in sprints."],
+["ba",5,"Root cause analysis","Find the real reason for a problem, not just the symptom.","5 Whys: keep asking why. Fishbone: group causes (people, process, tools, environment). Pareto: 80% of effects come from 20% of causes.","Late deliveries → no stock alerts → supplier data uploaded weekly → fix: daily feed."],
+["both",5,"User Acceptance Testing","Final validation that the solution meets business needs before release.","Write test scenarios from acceptance criteria, run them with real users, log defects, and obtain formal sign-off.","Finance team confirms invoices calculate correctly using real month-end data."],
+["pm",5,"Change control","A formal way to review, approve or reject changes to scope, time or cost.","Submit a change request, assess impact, decide at a Change Control Board, update baselines. This is the main defense against scope creep.","Client asks for a new report mid-project: impact is 2 weeks and 10k, CCB approves."],
+["pm",5,"Quality management","Build quality into the work rather than inspecting it in at the end.","PDCA cycle (Plan-Do-Check-Act), control charts, quality metrics, reviews and audits.","Code reviews and automated tests catch defects before UAT."],
+["pm",5,"Procurement and vendors","Buying outside goods and services under clear terms.","RFI to learn the market, RFP to request proposals, then score vendors on set criteria and manage the contract.","Three vendors score on cost, experience and support; the highest weighted score wins."],
+["both",5,"Change management (ADKAR)","Helps people adopt a change: Awareness, Desire, Knowledge, Ability, Reinforcement.","Find where people are stuck on the five steps and apply the matching action: communication, incentives, training, coaching, follow-up.","Staff know about a new system (Awareness) but are afraid of it (low Desire), so run a pilot first."],
+["pm",5,"Closure and lessons learned","Formally finish the project and capture what to repeat or avoid.","Confirm acceptance, release resources, archive documents, hold a lessons-learned session with actions and owners.","Lesson: estimate testing at 30% of build time, not 15%."]
+];
+let tr="all",ph=0,q="";
+const S=(()=>{try{return new Set(JSON.parse(localStorage.getItem("t360")||"[]"))}catch(e){return new Set()}})();
+const save=()=>{try{localStorage.setItem("t360",JSON.stringify([...S]))}catch(e){}};
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function setTrack(t){tr=t;draw();$("learn").scrollIntoView()}
+function draw(){
+ $("phases").innerHTML=[`<button class="phase" aria-pressed="${ph==0}" onclick="ph=0;draw()"><b>All phases</b><small>${D.length} topics</small></button>`].concat(P.map((n,i)=>`<button class="phase" aria-pressed="${ph==i+1}" onclick="ph=${i+1};draw()"><b>Phase ${i+1}</b><small>${n}</small></button>`)).join("");
+ $("tracks").innerHTML=[["all","All roles"],["ba","Business analysis"],["pm","Project management"],["both","Shared"]].map(([k,l])=>`<button class="chip" aria-pressed="${tr==k}" onclick="tr='${k}';draw()">${l}</button>`).join("");
+ const L=D.filter(d=>(tr=="all"||d[0]==tr)&&(!ph||d[1]==ph)&&(d[2]+d[3]).toLowerCase().includes(q));
+ $("grid").innerHTML=L.length?L.map(d=>{const k=D.indexOf(d);return `<details style="--c:${T[d[0]][1]};--t:${T[d[0]][2]}"><summary><div><h3>${esc(d[2])}</h3><p class="short">${esc(d[3])}</p></div><span>${T[d[0]][0]}</span></summary><div class="body"><h4>How it works</h4><p>${esc(d[4])}</p><h4>Example</h4><p>${esc(d[5])}</p><label class="done"><input type="checkbox" ${S.has(k)?"checked":""} onchange="tick(${k},this.checked)"> Mark as learned</label></div></details>`}).join(""):`<div class="empty">No topics match. Clear the search or choose All roles.</div>`;
+ const p=Math.round(S.size/D.length*100);$("pb").style.width=p+"%";$("pt").textContent=`${S.size} of ${D.length} topics learned (${p}%). Progress is saved in this browser.`;
+}
+function tick(k,v){v?S.add(k):S.delete(k);save();const p=Math.round(S.size/D.length*100);$("pb").style.width=p+"%";$("pt").textContent=`${S.size} of ${D.length} topics learned (${p}%). Progress is saved in this browser.`}
+$("q").addEventListener("input",e=>{q=e.target.value.toLowerCase().trim();draw()});
+draw();
+</script>
+</body>
+</html>
