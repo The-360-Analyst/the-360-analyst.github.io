@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The 360 Analyst | Business Analysis + Project Management</title>
-<meta name="description" content="Learn the core concepts, techniques and methods of Business Analysis and Project Management in one place.">
+<title>The 360 Analyst | Learn Business Analysis, Project Management and Agile</title>
+<meta name="description" content="Structured Business Analysis, Project Management and Agile lessons, a worked case study, downloadable templates, a glossary and interview preparation.">
+<link rel="canonical" href="https://the-360-analyst.github.io/">
+<meta property="og:url" content="https://the-360-analyst.github.io/">
 <link rel="icon" href="logo.png">
 <meta property="og:title" content="The 360 Analyst">
 <meta property="og:description" content="Learn the Skills. Understand the Business. Solve the Problem.">
-<meta property="og:image" content="banner.png">
+<meta property="og:image" content="https://the-360-analyst.github.io/banner.png">
 <meta name="theme-color" content="#ffd320"><text y=%22.9em%22 font-size=%2290%22></text></svg>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -28,7 +30,7 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 nav a{margin-left:18px;text-decoration:none;font-weight:700;font-size:.95rem}
 nav a:hover{text-decoration:underline}
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:56px 0 40px}
-.hero h1{font-size:clamp(3rem,7vw,5rem)}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4rem)}
 .hero h1 mark{background:var(--y);padding:0 .15em}
 .hero p{color:var(--mute);max-width:46ch;font-size:1.1rem}
 .pills{display:flex;gap:8px;margin:0 0 18px}
@@ -78,19 +80,27 @@ th{background:#000;color:var(--y)}
 .links a:hover small{color:#fff}
 footer{background:#000;color:#fff;padding:24px 0;font-size:.9rem}
 footer a{color:var(--y)}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.phases{grid-template-columns:1fr 1fr}nav{display:none}}
+.eyebrow{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;margin:0 0 10px}
+.panel{background:#fff;border:2px solid #000;padding:18px 20px;margin-top:12px}.panel h4{margin:14px 0 4px;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:4px}.panel ul{margin:4px 0;padding-left:20px}.panel table{margin:6px 0;font-size:.88rem}
+.flow i{font-style:normal;display:inline-block;background:var(--y);border:2px solid #000;padding:0 8px;margin:2px 0}
+.note{border-left:6px solid var(--y);background:#fff;padding:8px 14px;margin:0 0 16px;border-top:1px solid #000;border-right:1px solid #000;border-bottom:1px solid #000}
+.card{background:#fff;border:2px solid #000;padding:14px 16px}.card h3{font-size:1.4rem}.card p{margin:4px 0;font-size:.92rem}.card .btn{padding:6px 12px;font-size:.85rem;margin:8px 6px 0 0;cursor:pointer;font-family:inherit}
+.res button.go{display:block;width:100%;text-align:left;background:#fff;border:2px solid #000;padding:8px 12px;margin-top:6px;cursor:pointer;font:inherit}.res button.go:hover{background:var(--y)}.res small{color:var(--mute)}
+fieldset{border:2px solid #000;background:#fff;margin:0 0 10px;padding:10px 14px}legend{font-weight:700;padding:0 6px}fieldset label{display:block;padding:2px 0}.fb{font-weight:600;margin:6px 0 0}.ok{color:#0a6b2d}.bad{color:#a30000}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.phases{grid-template-columns:1fr 1fr}nav{display:flex;flex-wrap:wrap;width:100%;gap:2px 14px}nav a{margin-left:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.btn:hover{transform:none}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="#top" aria-label="The 360 Analyst home"><b>360</b><span>THE<br>ANALYST</span></a><nav><a href="#learn">Learn</a><a href="#compare">BA vs PM</a><a href="#shared">Shared tools</a><a href="#connect">Connect</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="The 360 Analyst home"><b>360</b><span>THE<br>ANALYST</span></a><nav aria-label="Primary"><a href="#learn">Learn</a><a href="#cases">Case study</a><a href="#resources">Resources</a><a href="#compare">BA vs PM</a><a href="#career">Career Hub</a><a href="#about">About</a></nav></div></header>
 <main id="top" class="wrap">
 <div class="hero">
  <div>
-  <div class="pills"><i>Learn</i><i>Analyse</i><i>Solve</i></div>
-  <h1>Learn the skills. Understand the <mark>business</mark>. Solve the problem.</h1>
-  <p>Business analysts define the what and why. Project managers control the how, when and with what. Learn both sides, the way real organizations use them.</p>
-  <a class="btn" href="#learn">Start learning</a><a class="btn alt" href="#compare">BA vs PM</a>
+  <p class="eyebrow">Business Analysis | Project Management | Practical Learning</p>
+  <h1>Learn Business Analysis. Master Project Delivery. Solve Real Business <mark>Problems</mark>.</h1>
+  <p>Learn how business analysts identify problems, gather requirements, analyse processes and define solutions. Discover how project professionals plan delivery, coordinate stakeholders and manage risks.</p>
+  <p>Follow structured paths, explore a worked case study, use templates and practise real-world scenarios.</p>
+  <a class="btn" href="#learn">Start Learning</a><a class="btn alt" href="#cases">Explore Case Studies</a><a class="btn" style="background:#fff;color:#000" href="#resources">Browse Resources</a>
  </div>
  <svg class="venn" viewBox="0 0 380 260" role="group" aria-label="Choose a track">
   <g tabindex="0" role="button" aria-label="Project Management topics" onclick="setTrack('pm')" onkeydown="if(event.key==='Enter')setTrack('pm')"><circle cx="240" cy="130" r="105" fill="#ffd320" stroke="#000" stroke-width="4"/><text x="272" y="146" font-size="44" fill="#000">PM</text></g>
@@ -99,8 +109,11 @@ footer a{color:var(--y)}
  </svg>
 </div>
 
+<section id="search"><h2>Search the library</h2><p class="sub">Search lessons, glossary terms, templates, the case study and interview questions.</p>
+ <div class="bar"><input type="search" id="gs" placeholder="Try: RACI, BPMN, risk, user story" aria-label="Search the whole site"><button class="chip" id="gc" type="button">Clear</button></div>
+ <div class="res" id="gr" aria-live="polite"></div></section>
 <section id="learn">
- <h2>Learning path</h2>
+ <h2>Learn: Business Analysis, Project Management and Agile</h2>
  <p class="sub">Five phases that follow a real project lifecycle. Pick a phase, filter by role, open a topic, and tick it off.</p>
  <div class="phases" id="phases"></div>
  <div class="bar" id="tracks"></div>
@@ -109,6 +122,21 @@ footer a{color:var(--y)}
  <div class="grid" id="grid"></div>
 </section>
 
+<section id="cases"><h2>Case study: e-commerce order management</h2>
+<p class="note"><b>Simulated educational scenario.</b> ShopEase is fictional. All numbers are illustrative assumptions, not real results.</p>
+<div class="bar" id="cs-tabs" role="group" aria-label="Case study parts"></div><div class="panel" id="cs-panel" tabindex="-1"></div>
+<h3 style="margin-top:26px;font-size:1.6rem">More case studies (outlines only, deliverables not yet written)</h3>
+<div class="grid" style="margin-top:10px">
+<div class="card"><h3>Banking loan origination</h3><p>Problem: slow applications and inconsistent customer updates. Planned: stakeholders, workflow, business rules, exceptions, UAT, risks.</p></div>
+<div class="card"><h3>Ride-hailing retention</h3><p>Problem: failed rides and cancellations. Planned: customer journey, root causes, KPIs, prioritisation.</p></div>
+<div class="card"><h3>Inventory management</h3><p>Problem: stockouts and excess stock. Planned: process maps, rules, stories, UAT, risks.</p></div>
+<div class="card"><h3>Support ticketing</h3><p>Problem: lost requests and inconsistent response times. Planned: ticket lifecycle, SLAs, escalation matrix, dashboards.</p></div></div></section>
+<section id="resources"><h2>Templates and resources</h2>
+<p class="sub">Illustrative starter templates, not official industry standards. Download a file or copy the text. Each has one example row to show the format.</p>
+<div class="grid" id="tpl"></div>
+<p class="sub" style="margin-top:12px">Not yet available: FRD, SRS, change request, project plan, WBS, status report, sprint worksheets and the burndown example.</p></section>
+<section id="glossary"><h2>Glossary</h2><div class="bar"><input type="search" id="gq" placeholder="Filter terms, e.g. RACI" aria-label="Filter glossary"></div><div class="tw"><table id="gt"></table></div></section>
+<section id="quiz"><h2>Knowledge check</h2><p class="sub">Six questions on core lessons. Answer all, then check.</p><div id="qz"></div></section>
 <section id="compare">
  <h2>BA vs PM at a glance</h2>
  <p class="sub">Two roles, one outcome. Knowing where they differ makes handoffs smoother.</p>
@@ -119,6 +147,16 @@ footer a{color:var(--y)}
  <tr><td>Standard</td><td>BABOK Guide (IIBA)</td><td>PMBOK Guide (PMI)</td></tr>
  <tr><td>Certifications</td><td>ECBA, CCBA, CBAP</td><td>CAPM, PMP</td></tr>
  <tr><td>Success measure</td><td>Solution delivers the intended business value</td><td>On time, on budget, in scope, with quality</td></tr>
+ </table></div>
+ <h3 style="margin-top:22px;font-size:1.6rem">Example: fixing stock discrepancies</h3>
+ <p class="sub">Role boundaries vary between organizations. This is one common split.</p>
+ <div class="tw"><table><tr><th>Activity</th><th>Usually led by</th><th>Collaboration</th></tr>
+ <tr><td>Investigate why stock counts differ</td><td>BA</td><td>PM schedules time with warehouse staff</td></tr>
+ <tr><td>Define inventory visibility requirements</td><td>BA</td><td>PM confirms scope and budget fit</td></tr>
+ <tr><td>Build the delivery plan, milestones and dependencies</td><td>PM</td><td>BA flags requirement-driven dependencies</td></tr>
+ <tr><td>Manage risks and vendor timelines</td><td>PM</td><td>BA assesses impact on requirements</td></tr>
+ <tr><td>Assess a change request for scanners</td><td>Shared</td><td>BA: business impact. PM: time and cost impact</td></tr>
+ <tr><td>Plan and run UAT, then sign-off</td><td>Shared</td><td>BA: scenarios. PM: schedule and approvals</td></tr>
  </table></div>
 </section>
 
@@ -133,6 +171,14 @@ footer a{color:var(--y)}
  <tr><td>ADKAR</td><td>Assess user readiness for the change</td><td>Plan training and adoption timelines</td></tr>
  </table></div>
 </section>
+<section id="career"><h2>Career Hub</h2>
+<p class="sub">Practice answers that explain the reasoning. Use your own experience and projects, and never claim simulated work as employment.</p>
+<div id="iq"></div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>Portfolio and resume</h3><p>List projects like this case study under "Projects" and label them "simulated". Show the problem, your method, the deliverables and what you learned. Do not state fictional results as real.</p></div>
+<div class="card"><h3>LinkedIn</h3><p>Use a clear headline (for example "Aspiring Business Analyst | Requirements | Process Modelling"), summarize your projects, and link your portfolio. Describe skills you can demonstrate.</p></div>
+<div class="card"><h3>Job-readiness checklist</h3><div id="ck"></div><p><small>No tool or course can guarantee a job or certification result.</small></p></div></div></section>
+<section id="about"><h2>About The 360 Analyst</h2><p class="sub" style="max-width:70ch">The 360 Analyst is an independent learning project for aspiring business analysts and project professionals. Content is for education and is not affiliated with IIBA or PMI. Terms and role boundaries differ between organizations, so check the BABOK Guide, PMBOK Guide and your employer’s practice.</p></section>
 </main>
 <section id="connect" class="connect"><div class="wrap">
  <h2>Connect with The 360 Analyst</h2>
@@ -147,7 +193,7 @@ footer a{color:var(--y)}
 
 <script>
 const P=["Foundations & strategy","Scoping & elicitation","Modeling & deliverables","Execution & tracking","Governance & delivery"];
-const T={ba:["Business analysis","#000","#fff"],pm:["Project management","#ffd320","#000"],both:["Shared","#c9c9c9","#000"]};
+const T={ba:["Business analysis","#000","#fff"],pm:["Project management","#ffd320","#000"],both:["Shared","#c9c9c9","#000"],ag:["Agile","#ffe98a","#000"]};
 // [track, phase, name, summary, how it works, example / formula]
 const D=[
 ["ba",1,"SWOT analysis","Map internal strengths and weaknesses against external opportunities and threats.","List each quadrant with evidence, then link every weakness or threat to an action. Use it before defining a project to see where change is needed.","A retailer sees slow checkout (weakness) and rising online demand (opportunity), so it proposes a faster online checkout."],
@@ -178,7 +224,14 @@ const D=[
 ["pm",5,"Quality management","Build quality into the work rather than inspecting it in at the end.","PDCA cycle (Plan-Do-Check-Act), control charts, quality metrics, reviews and audits.","Code reviews and automated tests catch defects before UAT."],
 ["pm",5,"Procurement and vendors","Buying outside goods and services under clear terms.","RFI to learn the market, RFP to request proposals, then score vendors on set criteria and manage the contract.","Three vendors score on cost, experience and support; the highest weighted score wins."],
 ["both",5,"Change management (ADKAR)","Helps people adopt a change: Awareness, Desire, Knowledge, Ability, Reinforcement.","Find where people are stuck on the five steps and apply the matching action: communication, incentives, training, coaching, follow-up.","Staff know about a new system (Awareness) but are afraid of it (low Desire), so run a pilot first."],
-["pm",5,"Closure and lessons learned","Formally finish the project and capture what to repeat or avoid.","Confirm acceptance, release resources, archive documents, hold a lessons-learned session with actions and owners.","Lesson: estimate testing at 30% of build time, not 15%."]
+["pm",5,"Closure and lessons learned","Formally finish the project and capture what to repeat or avoid.","Confirm acceptance, release resources, archive documents, hold a lessons-learned session with actions and owners.","Lesson: estimate testing at 30% of build time, not 15%."],
+["ba",1,"What is business analysis?","Business analysis finds business needs and recommends solutions that deliver value.","A BA clarifies the problem, talks to stakeholders, defines requirements, checks the solution works, and keeps scope tied to business objectives. Job titles vary: some organizations blend BA with product or systems analysis.","A retailer loses orders to stock errors. The BA investigates why, defines what the system must do, and checks the fix with users."],
+["ba",3,"AS-IS vs TO-BE analysis","AS-IS documents how work happens today. TO-BE shows the improved future process.","Map the current process with the people who do the work, mark delays and errors, then design the TO-BE and list the gap between them.","AS-IS: warehouse updates stock in a nightly batch. TO-BE: stock updates when each order is placed."],
+["ag",4,"Agile vs Waterfall","Waterfall delivers in sequential phases. Agile delivers in short cycles and adapts to feedback.","Waterfall suits fixed scope and heavy compliance. Agile suits uncertain needs. Many organizations mix both. Responsibilities and terms differ between companies.","A regulated bank may plan in phases, while its app team ships in two-week sprints."],
+["ag",2,"Backlog refinement, DoR and DoD","Keep the backlog ready and define clearly what ready and done mean.","Refinement splits and clarifies stories. Definition of Ready: story is clear, sized and testable. Definition of Done: coded, tested, reviewed and accepted.","A story without acceptance criteria fails the Definition of Ready and returns to refinement."],
+["ag",4,"Sprint review and retrospective","The review shows working results to stakeholders. The retrospective improves how the team works.","Review: demo, collect feedback, update the backlog. Retrospective: what went well, what to improve, one or two agreed actions.","The team agrees to add acceptance criteria before sprint planning after three stories were rejected."],
+["ag",4,"BA role in Agile teams","BAs help Product Owners and developers turn needs into clear, testable backlog items.","Common BA work: refine stories, write acceptance criteria, clarify rules, support testing and feedback. In some teams the Product Owner or others do parts of this.","The BA joins refinement to explain how refunds work so developers do not guess."]
+
 ];
 let tr="all",ph=0,q="";
 const S=(()=>{try{return new Set(JSON.parse(localStorage.getItem("t360")||"[]"))}catch(e){return new Set()}})();
@@ -188,14 +241,69 @@ const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 function setTrack(t){tr=t;draw();$("learn").scrollIntoView()}
 function draw(){
  $("phases").innerHTML=[`<button class="phase" aria-pressed="${ph==0}" onclick="ph=0;draw()"><b>All phases</b><small>${D.length} topics</small></button>`].concat(P.map((n,i)=>`<button class="phase" aria-pressed="${ph==i+1}" onclick="ph=${i+1};draw()"><b>Phase ${i+1}</b><small>${n}</small></button>`)).join("");
- $("tracks").innerHTML=[["all","All roles"],["ba","Business analysis"],["pm","Project management"],["both","Shared"]].map(([k,l])=>`<button class="chip" aria-pressed="${tr==k}" onclick="tr='${k}';draw()">${l}</button>`).join("");
+ $("tracks").innerHTML=[["all","All roles"],["ba","Business analysis"],["pm","Project management"],["both","Shared"],["ag","Agile & Scrum"]].map(([k,l])=>`<button class="chip" aria-pressed="${tr==k}" onclick="tr='${k}';draw()">${l}</button>`).join("");
  const L=D.filter(d=>(tr=="all"||d[0]==tr)&&(!ph||d[1]==ph)&&(d[2]+d[3]).toLowerCase().includes(q));
- $("grid").innerHTML=L.length?L.map(d=>{const k=D.indexOf(d);return `<details style="--c:${T[d[0]][1]};--t:${T[d[0]][2]}"><summary><div><h3>${esc(d[2])}</h3><p class="short">${esc(d[3])}</p></div><span>${T[d[0]][0]}</span></summary><div class="body"><h4>How it works</h4><p>${esc(d[4])}</p><h4>Example</h4><p>${esc(d[5])}</p><label class="done"><input type="checkbox" ${S.has(k)?"checked":""} onchange="tick(${k},this.checked)"> Mark as learned</label></div></details>`}).join(""):`<div class="empty">No topics match. Clear the search or choose All roles.</div>`;
+ $("grid").innerHTML=L.length?L.map(d=>{const k=D.indexOf(d);return `<details id="t${k}" style="--c:${T[d[0]][1]};--t:${T[d[0]][2]}"><summary><div><h3>${esc(d[2])}</h3><p class="short">${esc(d[3])}</p></div><span>${T[d[0]][0]}</span></summary><div class="body"><h4>How it works</h4><p>${esc(d[4])}</p><h4>Example</h4><p>${esc(d[5])}</p><label class="done"><input type="checkbox" ${S.has(k)?"checked":""} onchange="tick(${k},this.checked)"> Mark as learned</label></div></details>`}).join(""):`<div class="empty">No topics match. Clear the search or choose All roles.</div>`;
  const p=Math.round(S.size/D.length*100);$("pb").style.width=p+"%";$("pt").textContent=`${S.size} of ${D.length} topics learned (${p}%). Progress is saved in this browser.`;
 }
 function tick(k,v){v?S.add(k):S.delete(k);save();const p=Math.round(S.size/D.length*100);$("pb").style.width=p+"%";$("pt").textContent=`${S.size} of ${D.length} topics learned (${p}%). Progress is saved in this browser.`}
 $("q").addEventListener("input",e=>{q=e.target.value.toLowerCase().trim();draw()});
 draw();
+</script>
+<script>
+(function(){
+const tb=(h,r)=>`<div class="tw"><table><tr>${h.map(x=>`<th>${esc(x)}</th>`).join("")}</tr>${r.map(a=>`<tr>${a.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</table></div>`;
+const ul=a=>`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+const fl=a=>`<p class="flow">${a.map(x=>`<i>${esc(x)}</i>`).join(" → ")}</p>`;
+const p=t=>`<p>${esc(t)}</p>`,h=t=>`<h4>${esc(t)}</h4>`;
+const CS=[
+["Overview",h("Problem statement")+p("ShopEase, a fictional online retailer, loses orders and trust because stock shown online often differs from the warehouse, orders are picked from a spreadsheet, and customers cannot see order status.")+h("Business objectives (illustrative targets)")+ul(["O1: Reduce orders affected by stock mismatch from 8% to under 2%.","O2: Reduce wrong deliveries from 3% to under 1%.","O3: Cut “where is my order?” contacts by 40%."])+h("Scope")+ul(["In scope: real-time stock sync, stock reservation, pick lists, order tracking, status notifications, customer cancellation before dispatch.","Out of scope: loyalty points, new payment methods, supplier ordering."])],
+["Stakeholders",tb(["Stakeholder","Interest","Influence","Key need"],[["Operations head (sponsor)","High","High","Fewer cancellations and refunds"],["Warehouse manager","High","Medium","Accurate pick lists, simple scanning"],["Customer support lead","High","Medium","Order status visible to agents"],["Customers","High","Low","Reliable stock info and tracking"],["IT lead","Medium","High","Maintainable integration"],["Courier partner","Medium","Low","Correct addresses and parcel data"]])+h("Elicitation plan")+ul(["Interviews with the sponsor, warehouse manager and support lead.","Observe a picking shift (job shadowing).","Document analysis: last quarter’s cancellation and refund records.","Workshop to agree priorities."])],
+["AS-IS and root causes",h("AS-IS process")+fl(["Customer orders","Order saved","Pick next day from spreadsheet","Manual stock count","Ship","Courier delivers"])+h("Five Whys: wrong item delivered")+ul(["Why? Picker took the wrong item.","Why? Bin labels did not match the spreadsheet.","Why? Stock locations are edited by hand.","Why? No system links orders to stock.","Root cause: no integrated inventory and order system."])+h("Gap analysis")+tb(["Current","Target","Gap"],[["Stock updated nightly","Updated within 5 seconds","No live sync"],["Spreadsheet pick list","Pick list with bin location","No pick-list generation"],["No customer tracking","Status page and alerts","No status data or notifications"]])],
+["TO-BE and requirements",h("TO-BE process")+fl(["Customer checks live stock","Stock reserved at payment","Pick list with bin location","Scan to confirm item","Status updates sent","Delivered"])+h("Functional requirements and MoSCoW")+tb(["ID","Requirement","Priority"],[["FR1","Show live stock at checkout","Must"],["FR2","Reserve stock when order is paid","Must"],["FR3","Order status page","Must"],["FR4","Email customer on status change","Should"],["FR5","Pick list with bin location","Must"],["FR6","Customer cancels before dispatch","Should"],["FR7","Loyalty points","Won’t (this release)"]])+h("Non-functional requirements")+ul(["Stock updates appear within 5 seconds.","Pages load in under 3 seconds for 500 concurrent users (illustrative).","Role-based access and an audit log of stock changes."])+h("Business rules")+ul(["BR1: An order cannot be cancelled after dispatch.","BR2: Unpaid cart stock is held for 15 minutes."])],
+["Stories, RTM and UAT",h("User stories and acceptance criteria")+ul(["US1: As a shopper, I want to see if an item is in stock before paying so that I do not order unavailable items. Given stock is 0, When I open my cart, Then checkout is disabled and a message explains why.","US2: As a warehouse picker, I want a pick list with bin locations so that I pick the right item. Given an order is paid, When it is released, Then the list shows SKU, quantity and bin.","US3: As a shopper, I want status updates so that I know where my order is. Given status changes to Dispatched, Then I receive an email with a tracking link within 5 minutes."])+h("Traceability and UAT")+tb(["Objective","Requirement","Story","UAT case and expected result"],[["O1","FR1, FR2","US1","UAT-01: add last unit, second user cannot buy it. UAT-02: unpaid hold expires after 15 min."],["O2","FR5","US2","UAT-03: pick list shows correct bin for 3 sample orders."],["O3","FR3, FR4","US3","UAT-04: status page matches system. UAT-05: email arrives within 5 min."]])],
+["Delivery plan",h("Milestones")+tb(["Milestone","Week"],[["M1 Requirements signed off","4"],["M2 Stock sync built","10"],["M3 Pilot and UAT complete","13"],["M4 Go-live","14"]])+h("Risk register")+tb(["Risk","Likelihood","Impact","Response"],[["Courier API delayed","Medium","High","Mitigate: request sandbox in week 1"],["Warehouse resists new scanners","Medium","Medium","Mitigate: training and pilot team"],["Stock data errors at cutover","Low","High","Mitigate: reconcile counts before go-live"]])+h("KPIs and expected benefits")+p("Track mismatch rate, wrong-delivery rate and status-related contacts. The targets above are projections, not achieved results.")+p("Not yet included: wireframes, use case diagrams and a full BRD. These are planned.")]
+];
+let ci=0;
+function drawCS(){$("cs-tabs").innerHTML=CS.map((c,i)=>`<button type="button" class="chip" data-cs="${i}" aria-pressed="${i==ci}">${i+1}. ${esc(c[0])}</button>`).join("");$("cs-panel").innerHTML=CS[ci][1]}
+const TPL=[
+["Stakeholder register","csv","text/csv","Record who is affected and how to engage them.","At project start; update as people change.","Name,Role,Interest (H/M/L),Influence (H/M/L),Needs,Engagement,Owner\nWarehouse manager,Operations,H,M,Accurate pick lists,Weekly check-in,BA"],
+["Requirements traceability matrix","csv","text/csv","Link each requirement to its source, design and test.","From requirement sign-off to release.","Req ID,Requirement,Source,Design ref,Test case,Status\nFR1,Show live stock at checkout,Sponsor,Screen 4,UAT-01,Approved"],
+["Risk register","csv","text/csv","Track risks, scores and responses.","Weekly review through the project.","ID,Risk,Likelihood (1-5),Impact (1-5),Score,Response,Owner,Status\nR1,Courier API delayed,3,4,12,Request sandbox early,PM,Open"],
+["RACI matrix","csv","text/csv","Show who is Responsible, Accountable, Consulted, Informed.","When roles are unclear or work crosses teams.","Task,Sponsor,PM,BA,Developer,Tester\nApprove BRD,A,C,R,I,I"],
+["UAT test case","csv","text/csv","Document a business test and its expected result.","Before and during user acceptance testing.","Test ID,Requirement,Scenario,Steps,Expected result,Actual result,Status\nUAT-01,FR1,Last unit bought twice,Add last unit with two users,Second user is blocked,,Not run"],
+["Product backlog","csv","text/csv","Ordered list of work for an Agile team.","Maintain continuously; refine before sprints.","ID,User story,Priority,Estimate,Acceptance criteria,Status\nUS1,As a shopper I want to see stock so that I avoid unavailable items,1,5,Checkout disabled at zero stock,Ready"],
+["BRD outline","md","text/markdown","Structure for a Business Requirements Document.","When business needs and scope must be agreed.","# Business Requirements Document\n\n## 1. Purpose and background\n## 2. Business objectives\n## 3. Scope (in and out)\n## 4. Stakeholders\n## 5. Current process (AS-IS)\n## 6. Business requirements\n## 7. Assumptions and constraints\n## 8. Risks and dependencies\n## 9. Success measures\n## 10. Approvals\n"],
+["Project charter","md","text/markdown","Authorizes the project and sets the high-level frame.","At initiation, before detailed planning.","# Project Charter\n\n## Project name and sponsor\n## Business case and objectives\n## Scope and deliverables\n## Milestones\n## Budget and resources\n## Key risks and assumptions\n## Stakeholders\n## Approval and signatures\n"]];
+const dl=i=>{const t=TPL[i],b=new Blob([t[5]],{type:t[2]+";charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=t[0].toLowerCase().replace(/[^a-z0-9]+/g,"-")+"."+t[1];document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),500)};
+$("tpl").innerHTML=TPL.map((t,i)=>`<div class="card" id="tp${i}"><h3>${esc(t[0])}</h3><p><b>Purpose:</b> ${esc(t[3])}</p><p><b>When:</b> ${esc(t[4])}</p><p><b>Instructions:</b> ${t[1]=="csv"?"Open in Excel or Google Sheets. Replace the example row.":"Open in any text editor or Word. Fill each heading."}</p><button type="button" class="btn alt" data-dl="${i}">Download .${t[1]}</button><button type="button" class="btn" data-cp="${i}">Copy text</button></div>`).join("");
+const G=[["AS-IS","","How a process works today.","Manual nightly stock update.","AS-IS vs TO-BE"],["TO-BE","","The improved future process.","Stock updates on every order.","AS-IS vs TO-BE"],["BRD","Business Requirements Document","Document of business needs, scope and objectives.","ShopEase BRD sets goals O1 to O3.","BRD, FRD and RTM"],["FRD","Functional Requirements Document","Detailed description of what the system must do.","FR1: show live stock.","BRD, FRD and RTM"],["SRS","Software Requirements Specification","Technical specification of software behavior and constraints.","Lists performance and interface needs.","BRD, FRD and RTM"],["RTM","Requirements Traceability Matrix","Table linking requirements to tests and delivery.","FR1 links to UAT-01.","BRD, FRD and RTM"],["BPMN","Business Process Model and Notation","Standard notation for drawing processes.","Order process with an XOR gateway.","BPMN process modeling"],["DFD","Data Flow Diagram","Shows how data moves between processes and stores.","Order data flows to the warehouse.","Data modeling"],["UML","Unified Modeling Language","Standard diagrams for system design.","Sequence diagram of checkout.","UML diagrams"],["UAT","User Acceptance Testing","Business users confirm the solution meets needs.","Finance checks invoice totals.","User Acceptance Testing"],["MoSCoW","","Must, Should, Could, Won’t prioritization.","Loyalty points: Won’t this release.","MoSCoW prioritization"],["RACI","Responsible, Accountable, Consulted, Informed","Matrix of roles on tasks.","BA responsible for the BRD.","RACI and DACI"],["RAID","Risks, Assumptions, Issues, Dependencies","Log of the four project items to track.","Dependency: courier API.","Risk management"],["WBS","Work Breakdown Structure","Hierarchy splitting scope into work packages.","Website, Design, Build.","Work Breakdown Structure"],["CPM","Critical Path Method","Finds the longest dependent path that sets project length.","Delay on the critical path delays go-live.","Scheduling"],["EVM","Earned Value Management","Compares planned, earned and actual cost and progress.","SPI 0.8 means behind schedule.","Earned Value"],["MVP","Minimum Viable Product","Smallest release that delivers value and learning.","Live stock and tracking only.","MoSCoW prioritization"],["SLA","Service Level Agreement","Agreed service standard.","Reply to tickets within 4 hours.","Procurement"],["KPI","Key Performance Indicator","Measure of progress toward an objective.","Wrong-delivery rate.","What is business analysis"],["ROI","Return on Investment","(Benefit − cost) ÷ cost.","1.5× return on cost.","Project charter"]];
+function drawG(){const q=$("gq").value.toLowerCase().trim(),L=G.filter(g=>g.join(" ").toLowerCase().includes(q));$("gt").innerHTML="<tr><th>Term</th><th>Meaning</th><th>Example</th><th>Lesson</th></tr>"+(L.length?L.map(g=>`<tr><td><b>${esc(g[0])}</b>${g[1]?"<br>"+esc(g[1]):""}</td><td>${esc(g[2])}</td><td>${esc(g[3])}</td><td><button type="button" class="chip" data-tp="${esc(g[4])}">Open lesson</button></td></tr>`).join(""):`<tr><td colspan="4">No terms match “${esc(q)}”.</td></tr>`)}
+const Q=[["Which MoSCoW category holds items not delivered in this release?",["Must","Should","Could","Won’t (this time)"],3,"Won’t items are agreed as out of this release, though they may return later."],["Which is a well-formed user story?",["Build a login page.","As a shopper, I want to save my cart so that I can finish checkout later.","The system shall use a database.","Login must be fast."],1,"A user story names the user, the action and the benefit."],["In BPMN, which gateway sends flow down exactly one path?",["AND (parallel)","XOR (exclusive)","Message event","Pool"],1,"XOR chooses one path based on a condition."],["What is the main purpose of UAT?",["Find coding errors in single functions","Confirm the solution meets business needs with real users","Measure server speed","Write the BRD"],1,"UAT checks business fit before release."],["Who usually owns the project schedule and budget?",["Business analyst","Project manager","Tester","Nobody"],1,"Usually the PM, but this varies by organization."],["Late delivery → no stock alert → weekly data upload. Which technique is this?",["SWOT","Five Whys","Pareto","MoSCoW"],1,"Repeatedly asking why finds the root cause."]];
+function drawQ(r){$("qz").innerHTML=Q.map((q,i)=>`<fieldset><legend>${i+1}. ${esc(q[0])}</legend>${q[1].map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${esc(o)}</label>`).join("")}<p class="fb" id="f${i}" aria-live="polite"></p></fieldset>`).join("")+`<button type="button" class="btn" data-qc>Check answers</button><button type="button" class="btn alt" data-qr>Retry</button><p class="fb" id="qs" aria-live="polite">${r||""}</p>`}
+function chkQ(){let n=0,sc=0;Q.forEach((q,i)=>{const c=document.querySelector(`input[name=q${i}]:checked`);if(c)n++});if(n<Q.length){$("qs").textContent=`Please answer all questions (${n} of ${Q.length} answered).`;return}Q.forEach((q,i)=>{const v=+document.querySelector(`input[name=q${i}]:checked`).value,f=$("f"+i);if(v==q[2]){sc++;f.className="fb ok";f.textContent="Correct. "+q[3]}else{f.className="fb bad";f.textContent="Not quite. Correct answer: "+q[1][q[2]]+". "+q[3]}});$("qs").textContent=`Score: ${sc} of ${Q.length}.`}
+const IQ=[["BA","Tell me about a time requirements were unclear.","Describe a real or simulated project. Say how you identified the gap, which technique you used (for example an interview or prototype), how you documented the result, and how stakeholders confirmed it.","It shows method and outcome, not just a story."],["BA","How do you prioritize requirements?","I agree criteria with stakeholders such as business value, risk and effort, then group items with MoSCoW and confirm with the sponsor.","It names a technique and shows stakeholder agreement."],["BA","What is the difference between a BRD and an FRD?","A BRD states business needs and scope. An FRD describes what the system must do to meet them. Some organizations merge or rename them.","It is accurate and notes that practice varies."],["PM","How do you handle scope creep?","I compare the request with the baseline, assess time, cost and risk impact, and take it through change control for approval.","It shows process and impact assessment."],["PM","How would you respond if a project is behind schedule?","Check the critical path and cause, review options such as re-sequencing or reducing scope, and report options with impacts to the sponsor.","It starts with analysis and keeps stakeholders informed."],["PM","What is a risk register?","A log of risks with likelihood, impact, owner and response, reviewed regularly.","It is concise and shows ongoing use."]];
+$("iq").innerHTML=IQ.map(q=>`<details style="--c:#ffd320;margin-bottom:8px"><summary><h3>${esc(q[1])}</h3><span style="background:#ffd320">${q[0]}</span></summary><div class="body"><h4>Sample answer</h4><p>${esc(q[2])}</p><h4>Why it works</h4><p>${esc(q[3])}</p></div></details>`).join("");
+const CK=["Can explain BA and PM roles in two minutes","Wrote one BRD or requirements set","Drew an AS-IS and TO-BE process","Wrote five user stories with acceptance criteria","Built a RACI and risk register","Completed one simulated project","Updated resume and LinkedIn honestly","Practised six interview answers aloud"];
+let ck=new Set();try{ck=new Set(JSON.parse(localStorage.getItem("t360c")||"[]"))}catch(e){}
+$("ck").innerHTML=CK.map((c,i)=>`<label class="done"><input type="checkbox" data-ck="${i}" ${ck.has(i)?"checked":""}> ${esc(c)}</label>`).join("");
+const goTopic=sub=>{const k=D.findIndex(d=>d[2].toLowerCase().includes(sub.toLowerCase()));if(k<0)return;tr="all";ph=0;q="";$("q").value="";draw();const e=$("t"+k);if(e){e.open=true;e.scrollIntoView()}};
+const IX=[];D.forEach((d,k)=>IX.push([d[2],"Lesson",d[3],()=>goTopic(d[2])]));G.forEach(g=>IX.push([g[0]+(g[1]?" ("+g[1]+")":""),"Glossary",g[2],()=>{$("gq").value=g[0];drawG();$("glossary").scrollIntoView()}]));TPL.forEach((t,i)=>IX.push([t[0],"Template",t[3],()=>$("tp"+i).scrollIntoView()]));CS.forEach((c,i)=>IX.push([c[0],"Case study","ShopEase: "+c[0],()=>{ci=i;drawCS();$("cases").scrollIntoView()}]));IQ.forEach(q=>IX.push([q[1],"Interview",q[0]+" question",()=>$("career").scrollIntoView()]));
+let RS=[];
+function search(){const v=$("gs").value.toLowerCase().trim();if(!v){RS=[];$("gr").innerHTML="";return}RS=IX.filter(x=>(x[0]+" "+x[2]).toLowerCase().includes(v)).slice(0,10);$("gr").innerHTML=RS.length?RS.map((x,i)=>`<button type="button" class="go" data-r="${i}"><b>${esc(x[0])}</b> <small>${x[1]}: ${esc(x[2].slice(0,90))}</small></button>`).join(""):`<p class="empty">No results for “${esc(v)}”. Try a shorter word such as “risk” or “story”.</p>`}
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+if(d.cs!==undefined){ci=+d.cs;drawCS()}
+else if(d.dl!==undefined)dl(+d.dl)
+else if(d.cp!==undefined){const x=TPL[+d.cp][5];try{navigator.clipboard.writeText(x).then(()=>{t.textContent="Copied"},()=>{t.textContent="Copy not allowed"})}catch(_){t.textContent="Copy not supported"}}
+else if(d.tp!==undefined)goTopic(d.tp)
+else if(d.r!==undefined)RS[+d.r][3]()
+else if(d.qc!==undefined)chkQ()
+else if(d.qr!==undefined)drawQ()
+else if(t.id=="gc"){$("gs").value="";search()}});
+document.addEventListener("change",e=>{const c=e.target.dataset.ck;if(c===undefined)return;e.target.checked?ck.add(+c):ck.delete(+c);try{localStorage.setItem("t360c",JSON.stringify([...ck]))}catch(_){}});
+$("gs").addEventListener("input",search);$("gq").addEventListener("input",drawG);
+drawCS();drawG();drawQ();
+})();
 </script>
 </body>
 </html>
